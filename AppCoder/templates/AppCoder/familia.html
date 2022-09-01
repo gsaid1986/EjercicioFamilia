@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-NO SE COMO MOSTRAR ACA LAS VISTAS    
+    {% for familiar in familiares %}
+        <p><b>Nombre:</b> {{ familiar.nombre }}</p>
+        <p><b>Edad:</b> {{ familiar.edad }}</p>
+        <p><b>Fecha de nacimiento:</b> {{ familiar.fecha_nacimiento }}</p>
+    {% endfor %}
 </body>
 </html>
